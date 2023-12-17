@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#bgvideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.content {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+.menuborder {
+  width: 400px;
+  height: 500px;
+  color: white;
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 3%;
+  background-color: rgba(1, 0, 2, 0.7);
+}
