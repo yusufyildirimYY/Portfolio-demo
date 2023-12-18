@@ -16,37 +16,37 @@
     <video autoplay loop muted id="bgvideo">
       <source src="./space.mp4" type="video/mp4" />
     </video>
-    <div class="container">
-      <div>
-        <header>
-            <ul class="tabs">
-              <li class="tab home">Home</li>
-              <li class="tab about">About Me</li>
-              <li class="tab project">Projects</li>
-              <li class="tab contact borderbtm">Contact</li>
-            </ul>
-        </header>
-        <div class="content">
-          <div class="home">
-            <p class="greeting">
-              Hello!👋 <br />
-              I'm Yusuf Yildirim, my job is turning ideas to reality as a <br />
-              <h1 class="f-end">Front-End Developer </h1>
-            </p>
-          </div>
-          
-        </div>
+
+    <header>
+      <div class="main">
+        <ul class="tabs">
+          <li class="tab">Home</li>
+          <li class="tab">About Me</li>
+          <li class="tab">Projects</li>
+          <li class="tab">Contact</li>
+        </ul>
       </div>
-     </div>
+    </header>
+
+    <div class="container">
+      <div class="home">
+        <span class="greeting">
+          Hello!👋 <br />
+          I'm Yusuf Yildirim, my job is turning ideas to reality as a <br />
+          <h1 class="f-end">Front-End Developer</h1>
+        </span>
+      </div>
+      <div class="about-me"></div>
+    </div>
 
     <script>
       let vid = document.getElementById("bgvideo");
       vid.playbackRate = 0.8;
 
-      window.addEventListener("scroll", function(){
-        var header = document.querySelector("header")
-        header.classList.toggle("sticky", window.scrollY > 0 )
-      })
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
     </script>
   </body>
 </html>
