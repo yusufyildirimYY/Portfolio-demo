@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yusuf.dev</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video autoplay loop muted id="bgvideo">
+      <source src="./space.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <div>
+        <header>
+            <ul class="tabs">
+              <li class="tab home">Home</li>
+              <li class="tab about">About Me</li>
+              <li class="tab project">Projects</li>
+              <li class="tab contact borderbtm">Contact</li>
+            </ul>
+        </header>
+        <div class="content">
+          <div class="home">
+            <p class="greeting">
+              Hello!👋 <br />
+              I'm Yusuf Yildirim, my job is turning ideas to reality as a <br />
+              <h1 class="f-end">Front-End Developer </h1>
+            </p>
+          </div>
+          
+        </div>
+      </div>
+     </div>
+
+    <script>
+      let vid = document.getElementById("bgvideo");
+      vid.playbackRate = 0.8;
+
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header")
+        header.classList.toggle("sticky", window.scrollY > 0 )
+      })
+    </script>
+  </body>
+</html>
