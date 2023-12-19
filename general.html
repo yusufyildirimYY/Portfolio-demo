@@ -26,19 +26,23 @@
           <li class="tab">Contact</li>
         </ul>
       </div>
+      <div class="" id="box-shadow"></div>
     </header>
 
     <div class="container">
       <section class="home">
         <div class="greeting">
-          Hello!👋 <br />
+          <span style="color: rgb(173, 216, 230)"> Hello!👋</span> <br />
           I'm Yusuf Yildirim, my job is turning ideas to reality as a <br />
           <h1 class="f-end">Front-End Developer</h1>
         </div>
       </section>
       <section class="about-me">
         <div class="about">
-          <h1 class="who">Who am i?</h1>
+          <h1 class="" id="who">
+            Who am i <span style="color: rgb(173, 216, 230)">?</span>
+          </h1>
+          <div class="myself"></div>
         </div>
       </section>
     </div>
@@ -47,9 +51,16 @@
       let vid = document.getElementById("bgvideo");
       vid.playbackRate = 0.8;
 
+      var fade_out_finish = 0;
+
       window.addEventListener("scroll", function () {
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
+        var who = document.getElementById("who");
+        if (fade_out_finish === 0) {
+          who.classList.toggle("fade-out", window.scrollY > 945);
+          fade_out_finish = 1;
+        }
       });
     </script>
   </body>
