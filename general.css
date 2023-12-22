@@ -106,7 +106,7 @@ a {
   font-size: 5rem;
 }
 .fade-out {
-  animation: fade-out-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: fade-out-bck 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 0.2s;
 }
 @keyframes fade-out-bck {
@@ -123,7 +123,7 @@ a {
 
 .fade-in {
   animation: fade-in-fwd 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation-delay: 1.2s;
+  animation-delay: 0.8s;
 }
 
 @keyframes fade-in-fwd {
@@ -281,4 +281,72 @@ img {
   padding: 10px;
   margin: 5px;
   margin-top: 10px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 945px;
+  width: 100vw;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 90%;
+}
+
+.fborder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(173, 216, 230, 1);
+  border-radius: 50px;
+  width: 35%;
+  height: 90%;
+}
+.fhead {
+  position: absolute;
+  top: 10px;
+  font-size: 3rem;
+}
+
+.finput {
+  border: 3px solid rgba(173, 216, 230, 1);
+  padding: 16px;
+  font-size: 1.5rem;
+  width: 80%;
+  height: 10%;
+  border-radius: 20px;
+  margin: 10px 0px;
+}
+.ftext {
+  border: 3px solid rgba(173, 216, 230, 1);
+  padding: 16px;
+  font-size: 1.5rem;
+  width: 80%;
+  height: 30%;
+  border-radius: 20px;
+  margin: 10px 0px;
+}
+
+.fbutton {
+  cursor: pointer;
+  background-color: rgba(173, 216, 230, 1);
+  font-size: 1.5rem;
+  border: 1px solid rgba(173, 216, 230, 1);
+  border-radius: 10px;
+  height: 7%;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.fbutton:hover {
+  background-color: rgba(173, 216, 230, 0.85);
 }
