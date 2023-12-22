@@ -284,6 +284,7 @@ img {
 }
 
 #contact {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,6 +302,7 @@ form {
 
 .fborder {
   position: relative;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,4 +351,17 @@ form {
 
 .fbutton:hover {
   background-color: rgba(173, 216, 230, 0.85);
+}
+.devicon-github-original {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.flogos {
+  margin-top: 30px;
+}
+
+.flogo {
+  font-size: 4rem;
+  margin-inline: 5px;
 }
