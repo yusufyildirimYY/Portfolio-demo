@@ -26,7 +26,20 @@ body {
 a {
   color: white;
 }
-
+header {
+  position: relative;
+}
+.demo {
+  position: absolute;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
+  color: rgba(173, 216, 230, 1);
+  margin-inline: 10px;
+  border-inline: 2px solid rgba(173, 216, 230, 1);
+  border-radius: 10px;
+  padding-inline: 5px;
+}
 .navbar {
   z-index: 1000;
   display: flex;
