@@ -380,3 +380,71 @@ form {
   font-size: 4rem;
   margin-inline: 5px;
 }
+
+@media (max-width: 1450px) {
+  .fborder {
+    width: 40%;
+  }
+}
+@media (max-width: 1335px) {
+  #project {
+    height: auto;
+  }
+  .pf {
+    grid-template-columns: 1fr;
+  }
+  .pj {
+    margin-block: 20px;
+  }
+  .fborder {
+    width: 50%;
+  }
+}
+
+@media (max-width: 950px) {
+  .fborder {
+    width: 60%;
+  }
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: rgba(173, 216, 230, 1);
+    margin: 6px 0;
+  }
+
+  .navbar {
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 1);
+    transition: 0.5s;
+  }
+  .navbar .tabs {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+  }
+  .navbar .tabs .tab {
+    margin-bottom: 12px;
+  }
+
+  .navbar.active {
+    height: 320px;
+    border: 1px solid rgba(173, 216, 230, 1);
+    border-radius: 25px;
+  }
+  .navbar.active .tabs {
+    opacity: 1;
+  }
+}
